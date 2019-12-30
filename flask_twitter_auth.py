@@ -1,3 +1,10 @@
+# This server allows users to authorise the app to use their Twitter
+# credentials. Their token is written to the credentials.py file.
+#
+# To run:
+# $ export FLASK_APP=flask_twitter_auth.py
+# $ flask run
+
 from flask import Flask, session, redirect, request
 import tweepy
 
