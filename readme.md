@@ -17,6 +17,9 @@ consider using periodic API.home_timeline instead of stream.
 * Stream only follows users in the `ACCESS_TOKENS` list.
 * Currently strips attachments.
 * Email password and other credentials are stored in plaintext!
+* It's currently not possible to reply to Tweets via email, a reply will simply
+  create a new Tweet. Replies to streamed Tweets may also not be returned by the
+  stream to email recipients.
 
 
 ## Usage:
@@ -49,3 +52,8 @@ emails, and the Twitter stream.
 If a new user joins the list: simply halt the service (`ctrl-c`) and repeat the steps to add
 them to the credentials file. If accounts have since been set to protected, they'll
 need to individually authorise the follow requests.
+
+
+# Facebook Groups via Email
+This script watches a facebook group for new posts and sends them as an email to
+registered addresses. Work in progress: see comments in script for usage.
